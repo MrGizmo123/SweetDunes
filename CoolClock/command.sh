@@ -4,7 +4,7 @@
 #it must be called every minute
 
 #working directory
-WD=/home/liquidcat/Desktop/cool_clock
+WD=~/SweetDunes/CoolClock
 WIDTH=1920
 HEIGHT=1080
 
