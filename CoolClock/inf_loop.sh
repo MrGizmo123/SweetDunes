@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #working directory
-WD=/home/liquidcat/Desktop/cool_clock
+WD=~/SweetDunes/CoolClock
 
 #execute once at startup so wallpaper is immediately visible
 $WD/command.sh
