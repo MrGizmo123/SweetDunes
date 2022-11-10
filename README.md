@@ -15,7 +15,7 @@ i3-gaps picom-git rofi polybar sddm mpd
 
 ### For Arch
 
-Install the dependencies, [i3](https://wiki.archlinux.org/title/I3), [sddm] (https://wiki.archlinux.org/title/SDDM)
+Install the dependencies, [i3](https://wiki.archlinux.org/title/I3), [sddm](https://wiki.archlinux.org/title/SDDM) beforehand, the installer will not install these. Also dont forget to install [xorg](https://wiki.archlinux.org/title/Xorg)
 
 ```
 $ sudo pacman -S rofi polybar mpd mpc
