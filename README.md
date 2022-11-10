@@ -8,7 +8,7 @@ This rice is not meant for the best performance but for aesthetics. Many things 
 ## Dependencies
 
 ```
-i3-gaps picom-git rofi polybar sddm mpd
+i3-gaps picom-git rofi polybar sddm mpd wkhtmltopdf feh
 ```
 
 ## Installation
@@ -18,7 +18,7 @@ i3-gaps picom-git rofi polybar sddm mpd
 Install the dependencies, [i3](https://wiki.archlinux.org/title/I3), [sddm](https://wiki.archlinux.org/title/SDDM) beforehand, the installer will not install these. Also dont forget to install [xorg](https://wiki.archlinux.org/title/Xorg)
 
 ```
-$ sudo pacman -S rofi polybar mpd mpc
+$ sudo pacman -S rofi polybar mpd mpc wkhtmltopdf feh
 ```
 [picom-git](https://aur.archlinux.org/packages/picom-git) needs to be installed from the AUR. See [AUR Installation Instructions](https://wiki.archlinux.org/title/Arch_User_Repository)
 
@@ -53,12 +53,18 @@ $ rofi-theme-selector
 ### For other Distros
 
 Config files are provided. You can swap them into the required locations. i.e. (This may change accoring to your exact setup)
-* fonts in the /usr/share/fonts then `$ fc-cache -fv` 
-* the polybar config.ini at ~/.config/polybar 
-* i3 config at ~/.config/i3/ 
-* sddm theme at /usr/share/sddm/themes/ and change /etc/sddm.conf
-* copy rofi theme to ~/.local/share/rofi/themes/ and change to it by `$ rofi-theme-selector`
+* fonts in the `/usr/share/fonts` then `$ fc-cache -fv` 
+* the polybar config.ini at `~/.config/polybar` 
+* i3 config at `~/.config/i3/` 
+* sddm theme at `/usr/share/sddm/themes/` and change `/etc/sddm.conf`
+* copy rofi theme to `~/.local/share/rofi/themes/` and change to it by `$ rofi-theme-selector`
+* call the `~/SweetDunes/CoolClock/inf_loop.sh` script in your bootstrap routine (e.g. i3 config) 
+* Make sure all .sh files are executable by `$ chmod +x <filename>.sh`
 
 ## Customizing the Clock
 
-The clock (actually the entire wallpaper) is just an html page. You can edit the html to make other things, add as many layers of text and images as you like. To change the wallpaper, Find a wallpaper and manually split it into the foreground and background and replace the foreground.png and background.png in the CoolClock folder
+The clock (actually the entire wallpaper) is just an html page. You can edit the html to make other things, add as many layers of text and images as you like. To change the wallpaper 
+* Find a wallpaper 
+* Manually split it into the foreground and background 
+* Replace the foreground.png and background.png in the CoolClock folder
+This should change the wallpaper within a minute without needing to restart anything
