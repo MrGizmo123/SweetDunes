@@ -36,7 +36,7 @@ If it does not exist run this
 $ sudo cp /usr/lib/sddm.conf.d/default.conf /etc/sddm.conf
 ```
 
-It should look like this
+After changing it should look like this
 ```
 Stuff ... 
 
@@ -58,3 +58,7 @@ Config files are provided. You can swap them into the required locations. i.e. (
 * i3 config at ~/.config/i3/ 
 * sddm theme at /usr/share/sddm/themes/ and change /etc/sddm.conf
 * copy rofi theme to ~/.local/share/rofi/themes/ and change to it by `$ rofi-theme-selector`
+
+## Customizing the Clock
+
+The clock (actually the entire wallpaper) is just an html page. You can edit the html to make other things, add as many layers of text and images as you like. To change the wallpaper, Find a wallpaper and manually split it into the foreground and background and replace the foreground.png and background.png in the CoolClock folder
