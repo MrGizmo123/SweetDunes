@@ -31,7 +31,7 @@ $ ~/SweetDunes/install.sh
 ```
 It will ask you for your sudo password.
 
-You will manually need to change your sddm theme by going to /etc/sddm.conf and changing the current theme to sugar dark. 
+You will manually need to change your sddm theme by going to `/etc/sddm.conf` and changing the current theme to sddm-sugar-dark. 
 If it does not exist run this
 ```
 $ sudo cp /usr/lib/sddm.conf.d/default.conf /etc/sddm.conf
