@@ -76,5 +76,9 @@ sudo cp ~/SweetDunes/rofi-themes-collection/themes/rounded-yellow-dark.rasi /usr
 
 echo "Done!"
 
+echo "Starting Cool Clock"
+
+~/SweetDunes/CoolClock/inf_loop.sh &
+
 echo "Change your sddm theme to sddm-sugar-dark"
 echo "Change your rofi theme to rounded-yellow-dark by running rofi-theme-selector"
