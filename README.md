@@ -27,8 +27,9 @@ Clone this repo into your home directory and run install script (has not been te
 $ cd ~
 $ git clone https://github.com/MrGizmo123/SweetDunes
 $ chmod +x ~/SweetDunes/install.sh
-$ sudo ~/SweetDunes/install.sh
+$ ~/SweetDunes/install.sh
 ```
+It will ask you for your sudo password.
 
 You will manually need to change your sddm theme by going to /etc/sddm.conf and changing the current theme to sugar dark. 
 If it does not exist run this

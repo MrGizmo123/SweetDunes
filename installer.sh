@@ -63,7 +63,7 @@ cp Background.jpg grub2-themes/background.jpg
 
 echo "Install grub Theme"
 chmod +x grub2-themes/install.sh
-sudo grub2-themes/install.sh
+sudo grub2-themes/install.sh --theme tela --icon color --screen 1080p
 
 #rofi
 
