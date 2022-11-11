@@ -40,7 +40,7 @@ After changing it should look like this
 ```
 Stuff ... 
 
-[Current]=sugar-dark
+[Current]=sddm-sugar-dark
 
 Stuff ...
 ```
@@ -52,18 +52,22 @@ $ rofi-theme-selector
 
 ### For other Distros
 
-Config files are provided. You can swap them into the required locations. i.e. (This may change accoring to your exact setup)
+Config files are provided. You can swap them into the required locations. (This may change accoring to your exact setup)
 * fonts in the `/usr/share/fonts` then `$ fc-cache -fv` 
-* the polybar config.ini at `~/.config/polybar` 
+* the polybar config.ini at `~/.config/polybar/` 
 * i3 config at `~/.config/i3/` 
 * sddm theme at `/usr/share/sddm/themes/` and change `/etc/sddm.conf`
 * copy rofi theme to `~/.local/share/rofi/themes/` and change to it by `$ rofi-theme-selector`
 * call the `~/SweetDunes/CoolClock/inf_loop.sh` script in your bootstrap routine (e.g. i3 config) 
 * Make sure all .sh files are executable by `$ chmod +x <filename>.sh`
 
+## Adjustments
+
+The default font sizes will work for a 1920x1080 resolution. For other resolutions you may have to change some font sizes in the configuration files
+
 ## Customizing the Clock
 
-The clock (actually the entire wallpaper) is just an html page. You can edit the html to make other things, add as many layers of text and images as you like. To change the wallpaper 
+The clock (actually the entire wallpaper) is just an html page. You can edit the `~/SweetDunes/CoolClock/layout.html` to make other things, add as many layers of text and images as you like. To change the wallpaper 
 * Find a wallpaper 
 * Manually split it into the foreground and background 
 * Replace the foreground.png and background.png in the CoolClock folder
