@@ -16,17 +16,25 @@ cd ~
 
 echo "Installing Cool Clock"
 cd ~/SweetDunes
-chmod +x ~/SweetDunes/Cool/Clock/inf_loop.sh ~/SweetDunes/CoolClock/command.sh
+chmod +x ~/SweetDunes/CoolClock/inf_loop.sh ~/SweetDunes/CoolClock/command.sh
 echo "exec --no-startup-id ~/SweetDunes/CoolClock/inf_loop.sh" >> ~/.config/i3/config
 
 #picom 
 
 echo "Installing Picom config"
+
+mkdir -p ~/.config/picom/backup
+mv ~/.config/picom/* ~/.config/picom/backup/
+
 cp picom/picom.conf ~/.config/picom/
 
 #polybar
 
 echo "Installing polybar config"
+
+mkdir -p ~/.config/polybar/backup
+mv ~/.config/polybar/* ~/.config/polybar/backup/
+
 cp polybar/config.ini ~/.config/polybar/
 chmod +x ~/SweetDunes/polybar/polybar.sh
 echo "exec --no-startup-id ~/SweetDunes/polybar/polybar.sh"
@@ -50,7 +58,7 @@ git clone https://github.com/lr-tech/rofi-themes-collection.git
 
 echo "Installing rofi theme"
 mkdir -p ~/.local/share/rofi/themes/
-cp themes/rounded-yellow-dark.rasi ~/.local/share/rofi/themes/
+cp themes/rounded-yellow-dark.rasi /usr/share/rofi/themes/
 
 echo "Done!"
 
