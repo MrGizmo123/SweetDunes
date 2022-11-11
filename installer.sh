@@ -68,11 +68,12 @@ sudo grub2-themes/install.sh --theme tela --icon color --screen 1080p
 #rofi
 
 echo "Downloading rofi theme"
-git clone https://github.com/lr-tech/rofi-themes-collection.git
+git clone https://github.com/MrGizmo123/rofi-themes-collection
 
 echo "Installing rofi theme"
 sudo mkdir -p /usr/share/rofi/themes/
-sudo cp ~/SweetDunes/rofi-themes-collection/themes/rounded-yellow-dark.rasi /usr/share/rofi/themes/
+sudo cp ~/SweetDunes/rofi-themes-collection/themes/rounded*.rasi /usr/share/rofi/themes/
+
 
 echo "Done!"
 
