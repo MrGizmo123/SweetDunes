@@ -15,7 +15,7 @@ i3-gaps picom-git rofi polybar sddm mpd wkhtmltopdf feh
 
 ### For Arch
 
-Install the dependencies, [i3](https://wiki.archlinux.org/title/I3), [sddm](https://wiki.archlinux.org/title/SDDM) beforehand, the installer will not install these. Also dont forget to install [xorg](https://wiki.archlinux.org/title/Xorg)
+Install the dependencies, [i3](https://wiki.archlinux.org/title/I3), [sddm](https://wiki.archlinux.org/title/SDDM) beforehand, the installer will not install these. Also dont forget to install [xorg](https://wiki.archlinux.org/title/Xorg) (People always seem to forget this)
 
 ```
 $ sudo pacman -S rofi polybar mpd mpc wkhtmltopdf feh
